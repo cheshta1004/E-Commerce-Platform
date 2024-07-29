@@ -1,0 +1,257 @@
+body {
+    background-color: #f8f9fa; /* Light gray background */
+    font-family:'Times New Roman', Times, serif;
+}
+
+body.blur  #contentWrapper {
+    filter: blur(5px); /* Adjust the blur amount as needed */
+    opacity: 0.5;
+}
+
+.popup {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    z-index: 9999;
+}
+
+/* Popup Container */
+.popup-container {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    overflow: auto;
+}
+.cartItems{
+    overflow: auto;
+    display: flex;
+    flex-wrap: wrap;
+    
+    height: 400px;
+    position: absolute;
+    top: 90px;
+    bottom: 20px;
+    right: 500px;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+#total,.close{
+    position:relative;
+    display: block;
+}
+.place-prder{
+    position: relative;
+    bottom: 10px;
+}
+#shoppingCart h1 {
+    font-size: 24px;
+    margin-bottom: 20px; 
+} 
+ #shoppingCart {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    position: relative;
+    /* top: 50px; */
+    /* bottom: 20px;
+    right: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000; */
+}
+
+#shoppingCart h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#shoppingCart .card {
+    margin-bottom: 10px;
+}
+
+#shoppingCart .remove-from-cart {
+    margin-top: 10px;
+}
+
+#total {
+    margin-top: 10px;
+} */
+
+.card {
+    margin-bottom: 20px; /* Add space between cards */
+    border: 1px solid #ced4da; /* Add border to the card */
+    border-radius: 8px; /* Add rounded corners to the card */
+    overflow: hidden; /* Hide overflow content */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow */
+}
+
+.card-img-top {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ced4da; /* Add border below image */
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 16px;
+    color: #6c757d; /* Set text color */
+}
+
+
+/* Initially hide the cart items */
+.cartItems {
+    display: none;
+}
+
+.cart-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity as needed */
+    z-index: 1000; /* Ensure it's above other elements */
+    display: none; /* Initially hidden */
+}
+#quantity{
+    margin:0 20px 0px 70px;
+    width: 100px;
+    background-color: #54B4D3;
+    color: white;
+    border-radius: 0.1rem;
+    font-size: larger;
+}
+/* Popup Content */
+.popup-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.section{
+   display: flex;
+   flex-wrap: wrap; 
+   justify-content: space-evenly;
+}
+.navbar {
+    background-color: #f8f9fa; /* White navbar background */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Add shadow for depth */
+}
+        .navbar-brand {
+            color: #007bff; /* Primary color for the brand */
+            font-weight: bold;
+        }
+       
+        .nav-link {
+            color: #333333; /* Dark gray color for nav links */
+        }
+        .nav-link:hover {
+            color: #007bff; /* Primary color on hover */
+        }
+        .carousel-item img {
+            border-radius: 10px; /* Rounded corners for carousel images */
+        }
+        .card {
+            border: none; /* Remove border from cards */
+            border-radius: 10px; /* Rounded corners for cards */
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Add shadow for depth */
+            transition: transform 0.3s; /* Add smooth transition effect */
+        }
+        .card:hover {
+            transform: translateY(-5px); /* Move card up slightly on hover */
+        }
+        .card-title {
+            color: #333333; /* Dark gray color for card titles */
+            font-weight: bold;
+        }
+        .card-text {
+            color: #666666; /* Medium gray color for card text */
+        }
+        .btn-info {
+            background-color: #17a2b8; /* Light blue color for buttons */
+            border-color: #17a2b8; /* Light blue border color for buttons */
+        }
+        .btn-info:hover {
+            background-color: #138496; /* Darker shade of blue on hover */
+            border-color: #138496; /* Darker shade of blue border color on hover */
+        }
+
+.nav-obj button,input{
+    
+    border-radius: 1rem;
+    border: 1px solid darkgray;
+}
+
+.footer {
+    background-color: #f8f9fa;
+    padding: 30px 0;
+}
+
+.footer h5 {
+    margin-top: 0;
+    font-weight: bold;
+    color: #333; /* Darken the heading color */
+}
+
+.footer p {
+    color: #666; /* Darken the paragraph text color */
+}
+
+.footer a {
+    color: #333;
+    margin-right: 10px;
+}
+
+.footer a:hover {
+    color: #007bff;
+}
+
+.social-links a {
+    margin-right: 5px;
+}
+
+.social-links a:last-child {
+    margin-right: 0;
+}

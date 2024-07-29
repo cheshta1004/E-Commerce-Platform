@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="addToCart.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="glass.css">
+    <title>Glassware</title>
+</head>
+<body>
+
+    <div id="contentWrapper">
+
+<nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="#"><img src="C:\Users\chesh\OneDrive\Desktop\4 sem\FEE\Project1\Pictures\text-1709488846867.png" alt=""height="60px"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item ">
+                <a class="nav-link" href="C:\Users\chesh\OneDrive\Desktop\4 sem\FEE\Project1\code\glass.html">New In</a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link" href="C:\Users\chesh\OneDrive\Desktop\4 sem\FEE\Project1\code\dining.html">Dining</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Decor</a>
+            </li>
+        </ul>
+        <div class="nav-obj">
+            <input type="text" id="find" placeholder="  search here...." onkeyup="search()">
+            <button onclick="showPopup('Login/Signup at New In page')"><i class="fas fa-user"></i></i></button>
+            <a href="#" id="cartButton"><i class="fas fa-shopping-cart"></i></a>
+        </div>
+    </div>
+</nav>
+<nav>
+    <div style="background-color: #B9D9EB; text-align: center;">
+        <img src="C:\Users\chesh\OneDrive\Desktop\4 sem\FEE\Project1\Pictures\text-1709553998792.png" alt="" width="200px" >
+    </div>
+</nav>
+
+<div class="container mt-5 ">
+    <div class="row">
+      <!-- Card 1 -->
+      <div class="col-sm-3 mb-3">
+          <div class="card product">
+              <img class="card-img-top" src="C:\Users\chesh\OneDrive\Desktop\4 sem\FEE\Project1\Pictures\c1.webp" alt="Card image cap">
+              <div class="card-body">
+                  <h5 class="card-title">Set Of 3 Luxe Metal Cutwork Holder</h5>
+                  <p class="card-text">Rs. 957.00</p> 
+                  <a href="#"id="cart" class="btn btn-info add-to-cart" data-id="30" data-name="Set Of 3 Luxe Metal Cutwork Holder" data-price="957.00" data-imageSrc="C:\Users\chesh\OneDrive\Desktop\4 sem\FEE\Project1\Pictures\c1.webp">Add to cart</a>
+             </div>
+          </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="col-sm-3 mb-3">
+          <div class="card product">
+              <img class="card-img-top" src="C:\Users\chesh\OneDrive\Desktop\4 sem\FEE\Project1\Pictures\c2.webp" alt="Card image cap">
+              <div class="card-body">
+                  <h5 class="card-title">Set Of 2 Luxury Pillar Candle Holder </h5>
+                  <p class="card-text">Rs. 1,890.00</p>
+                  <a href="#"id="cart" class="btn btn-info add-to-cart" data-id="31" data-name="Set Of 2 Luxury Pillar Candle Holder " data-price="1890.00" data-imageSrc="C:\Users\chesh\OneDrive\Desktop\4 sem\FEE\Project1\Pictures\c2.webp">Add to cart</a>
+              </div>
+          </div>
+      </div>
+      <!-- Card 3 -->
+      <div class="col-sm-3 mb-3">
+          <div class="card product">
+              <img class="card-img-top" src="C:\Users\chesh\OneDrive\Desktop\4 sem\FEE\Project1\Pictures\c3.webp" alt="Card image cap">
+              <div class="card-body">
+                  <h5 class="card-title">Festive Tealight Candle Holder Set Of 3</h5>
+                  <p class="card-text">Rs. 992.00</p>
+                  <a href="#"id="cart" class="btn btn-info add-to-cart" data-id="32" data-name="Festive Tealight Candle Holder Set Of 3" data-price="992.00" data-imageSrc="C:\Users\chesh\OneDrive\Desktop\4 sem\FEE\Project1\Pictures\c3.webp">Add to cart</a>
+             </div>
+          </div>
+      </div>
+      <!-- Card 4 -->
+      <div class="col-sm-3 mb-3">
+        <div class="card product">
+            <img class="card-img-top" src="C:\Users\chesh\OneDrive\Desktop\4 sem\FEE\Project1\Pictures\c4.webp" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Vanity Mirror</h5>
+                <p class="card-text">Rs. 450</p>
+                <a href="#"id="cart" class="btn btn-info add-to-cart" data-id="33" data-name="Vanity Mirror" data-price="450.00" data-imageSrc="C:\Users\chesh\OneDrive\Desktop\4 sem\FEE\Project1\Pictures\c4.webp">Add to cart</a>
+              </div>
+        </div>
+    </div>
+  </div>
+  <div class="row">
+    <!-- Card 1 -->
+    <div class="col-sm-3 mb-3">
+        <div class="card product">
+            <img class="card-img-top" src="C:\Users\chesh\OneDrive\Desktop\4 sem\FEE\Project1\Pictures\c5.webp" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Luxurious Crystal Votive Candle Holder</h5>
+                <p class="card-text">Rs. 2,280</p> 
+                <a href="#"id="cart" class="btn btn-info add-to-cart" data-id="34" data-name="Luxurious Crystal Votive Candle Holder" data-price="2280.00" data-imageSrc="C:\Users\chesh\OneDrive\Desktop\4 sem\FEE\Project1\Pictures\c5.webp">Add to cart</a>
+            </div>
+        </div>
+    </div>
+    <!-- Card 2 -->
+    <div class="col-sm-3 mb-3">
+        <div class="card product">
+            <img class="card-img-top" src="C:\Users\chesh\OneDrive\Desktop\4 sem\FEE\Project1\Pictures\c6.webp" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Contemporary Ceramic Pot White </h5>
+                <p class="card-text">Rs. 1,800.00</p>
+                <a href="#"id="cart" class="btn btn-info add-to-cart" data-id="35" data-name="Contemporary Ceramic Pot White " data-price="1800.00" data-imageSrc="C:\Users\chesh\OneDrive\Desktop\4 sem\FEE\Project1\Pictures\c6.webp">Add to cart</a>
+              </div>
+        </div>
+    </div>
+    <!-- Card 3 -->
+    <div class="col-sm-3 mb-3">
+        <div class="card product">
+            <img class="card-img-top" src="C:\Users\chesh\OneDrive\Desktop\4 sem\FEE\Project1\Pictures\c7.webp" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Wabi Sabi Metal Artwork </h5>
+                <p class="card-text">Rs. 3,900.00</p>
+                <a href="#"id="cart" class="btn btn-info add-to-cart" data-id="36" data-name="Wabi Sabi Metal Artwork" data-price="3900.00" data-imageSrc="C:\Users\chesh\OneDrive\Desktop\4 sem\FEE\Project1\Pictures\c7.webp">Add to cart</a>
+            </div>
+        </div>
+    </div>
+    <!-- Card 4 -->
+    <div class="col-sm-3 mb-3">
+      <div class="card product">
+          <img class="card-img-top" src="C:\Users\chesh\OneDrive\Desktop\4 sem\FEE\Project1\Pictures\c8.webp" alt="Card image cap">
+          <div class="card-body">
+              <h5 class="card-title">Intricate Heart Design Air Diffuser </h5>
+              <p class="card-text">Rs. 1,900</p>
+              <a href="#"id="cart" class="btn btn-info add-to-cart" data-id="37" data-name="Intricate Heart Design Air Diffuser" data-price="1900.00" data-imageSrc="C:\Users\chesh\OneDrive\Desktop\4 sem\FEE\Project1\Pictures\c8.webp">Add to cart</a>
+            </div>
+      </div>
+  </div>
+</div>
+<div class="row">
+    <!-- Card 1 -->
+    <div class="col-sm-3 mb-3">
+        <div class="card product">
+            <img class="card-img-top" src="C:\Users\chesh\OneDrive\Desktop\4 sem\FEE\Project1\Pictures\c9.webp" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Sustainable Floral Wreath Garland Blue</h5>
+                <p class="card-text">Rs. 912.00</p> 
+                <a href="#"id="cart" class="btn btn-info add-to-cart" data-id="38" data-name="Sustainable Floral Wreath Garland Blue" data-price="912.00" data-imageSrc="C:\Users\chesh\OneDrive\Desktop\4 sem\FEE\Project1\Pictures\c9.webp">Add to cart</a>
+            </div>
+        </div>
+    </div>
+    <!-- Card 2 -->
+    <div class="col-sm-3 mb-3">
+        <div class="card product">
+            <img class="card-img-top" src="C:\Users\chesh\OneDrive\Desktop\4 sem\FEE\Project1\Pictures\c10.webp" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Vintage Elephant Decor Piece White </h5>
+                <p class="card-text">Rs. 1,280.00</p>
+                <a href="#"id="cart" class="btn btn-info add-to-cart" data-id="39" data-name="Vintage Elephant Decor Piece White" data-price="1280.00" data-imageSrc="C:\Users\chesh\OneDrive\Desktop\4 sem\FEE\Project1\Pictures\c10.webp">Add to cart</a>
+            </div>
+        </div>
+    </div>
+    <!-- Card 3 -->
+    <div class="col-sm-3 mb-3">
+        <div class="card product">
+            <img class="card-img-top" src="C:\Users\chesh\OneDrive\Desktop\4 sem\FEE\Project1\Pictures\c11.webp" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Floral Fantasy Ceramic Planter</h5>
+                <p class="card-text">Rs. 1,398.00</p>
+                <a href="#"id="cart" class="btn btn-info add-to-cart" data-id="40" data-name="Floral Fantasy Ceramic Planter" data-price="1398.00" data-imageSrc="C:\Users\chesh\OneDrive\Desktop\4 sem\FEE\Project1\Pictures\c11.webp">Add to cart</a>
+            </div>
+        </div>
+    </div>
+    <!-- Card 4 -->
+    <div class="col-sm-3 mb-3">
+      <div class="card product">
+          <img class="card-img-top" src="C:\Users\chesh\OneDrive\Desktop\4 sem\FEE\Project1\Pictures\c12.webp" alt="Card image cap">
+          <div class="card-body">
+              <h5 class="card-title">Dino Decor</h5>
+              <p class="card-text">Rs. 750.00</p>
+              <a href="#"id="cart" class="btn btn-info add-to-cart" data-id="41" data-name="Dino Decor" data-price="750.00" data-imageSrc="C:\Users\chesh\OneDrive\Desktop\4 sem\FEE\Project1\Pictures\c12.webp">Add to cart</a>
+            </div>
+      </div>
+  </div>
+</div>
+<div class="row">
+    <!-- Card 1 -->
+    <div class="col-sm-3 mb-3">
+        <div class="card product">
+            <img class="card-img-top" src="C:\Users\chesh\OneDrive\Desktop\4 sem\FEE\Project1\Pictures\c13.webp" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Leaf Vase Set of 3</h5>
+                <p class="card-text">Rs. 3,558.00</p> 
+                <a href="#"id="cart" class="btn btn-info add-to-cart" data-id="42" data-name="Leaf Vase Set of 3" data-price="3558.00" data-imageSrc="C:\Users\chesh\OneDrive\Desktop\4 sem\FEE\Project1\Pictures\c13.webp">Add to cart</a>
+             </div>
+        </div>
+    </div>
+    <!-- Card 2 -->
+    <div class="col-sm-3 mb-3">
+        <div class="card product">
+            <img class="card-img-top" src="C:\Users\chesh\OneDrive\Desktop\4 sem\FEE\Project1\Pictures\c14.webp" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Abstract Elephant </h5>
+                <p class="card-text">Rs. 1,737.00</p>
+                <a href="#"id="cart" class="btn btn-info add-to-cart" data-id="43" data-name="Abstract Elephant" data-price="1737.00" data-imageSrc="C:\Users\chesh\OneDrive\Desktop\4 sem\FEE\Project1\Pictures\c14.webp">Add to cart</a>
+            </div>
+        </div>
+    </div>
+    <!-- Card 3 -->
+    <div class="col-sm-3 mb-3">
+        <div class="card product">
+            <img class="card-img-top" src="C:\Users\chesh\OneDrive\Desktop\4 sem\FEE\Project1\Pictures\c15.webp" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Large Bottle Glass Vase</h5>
+                <p class="card-text">Rs. 1,595</p>
+                <a href="#"id="cart" class="btn btn-info add-to-cart" data-id="44" data-name="Large Bottle Glass Vase" data-price="1595.00" data-imageSrc="C:\Users\chesh\OneDrive\Desktop\4 sem\FEE\Project1\Pictures\c15.webp">Add to cart</a>
+            </div>
+        </div>
+    </div>
+    <!-- Card 4 -->
+    <div class="col-sm-3 mb-3">
+      <div class="card product">
+          <img class="card-img-top" src="C:\Users\chesh\OneDrive\Desktop\4 sem\FEE\Project1\Pictures\c16.webp" alt="Card image cap">
+          <div class="card-body">
+              <h5 class="card-title">Eco Sustainable Flower Wreath For Home Multicolour</h5>
+              <p class="card-text">Rs. 550.00</p>
+              <a href="#"id="cart" class="btn btn-info add-to-cart" data-id="45" data-name="Eco Sustainable Flower Wreath For Home Multicolour" data-price="550.00" data-imageSrc="C:\Users\chesh\OneDrive\Desktop\4 sem\FEE\Project1\Pictures\c16.webp">Add to cart</a>
+            </div>
+      </div>
+  </div>
+</div>
+<div class="row">
+    <!-- Card 1 -->
+    <div class="col-sm-3 mb-3">
+        <div class="card product">
+            <img class="card-img-top" src="C:\Users\chesh\OneDrive\Desktop\4 sem\FEE\Project1\Pictures\c17.webp" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Small Globe Vase</h5>
+                <p class="card-text">Rs. 986.00</p> 
+                <a href="#"id="cart" class="btn btn-info add-to-cart" data-id="46" data-name="Small Globe Vase" data-price="986.00" data-imageSrc="C:\Users\chesh\OneDrive\Desktop\4 sem\FEE\Project1\Pictures\c17.webp">Add to cart</a>
+            </div>
+        </div>
+    </div>
+    <!-- Card 2 -->
+    <div class="col-sm-3 mb-3">
+        <div class="card product">
+            <img class="card-img-top" src="C:\Users\chesh\OneDrive\Desktop\4 sem\FEE\Project1\Pictures\c18.webp" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Bauhaus Ceramic Vase With Stand </h5>
+                <p class="card-text">Rs. 1,830.00</p>
+                <a href="#"id="cart" class="btn btn-info add-to-cart" data-id="47" data-name="Bauhaus Ceramic Vase With Stand " data-price="1830.00" data-imageSrc="C:\Users\chesh\OneDrive\Desktop\4 sem\FEE\Project1\Pictures\c18.webp">Add to cart</a>
+             </div>
+        </div>
+    </div>
+    <!-- Card 3 -->
+    <div class="col-sm-3 mb-3">
+        <div class="card product">
+            <img class="card-img-top" src="C:\Users\chesh\OneDrive\Desktop\4 sem\FEE\Project1\Pictures\c19.webp" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Honeycomb Inlay Table Lamp </h5>
+                <p class="card-text">Rs. 1,892.00</p>
+                <a href="#"id="cart" class="btn btn-info add-to-cart" data-id="48" data-name="Honeycomb Inlay Table Lamp" data-price="1892.00" data-imageSrc="C:\Users\chesh\OneDrive\Desktop\4 sem\FEE\Project1\Pictures\c19.webp">Add to cart</a>
+            </div>
+        </div>
+    </div>
+    <!-- Card 4 -->
+    <div class="col-sm-3 mb-3">
+      <div class="card product">
+          <img class="card-img-top" src="C:\Users\chesh\OneDrive\Desktop\4 sem\FEE\Project1\Pictures\c20.webp" alt="Card image cap">
+          <div class="card-body">
+              <h5 class="card-title">Hamsa Hand Mango Wood Tea Light Holders</h5>
+              <p class="card-text">Rs. 650.00</p>
+              <a href="#"id="cart" class="btn btn-info add-to-cart" data-id="49" data-name="Hamsa Hand Mango Wood Tea Light Holders" data-price="650.00" data-imageSrc="C:\Users\chesh\OneDrive\Desktop\4 sem\FEE\Project1\Pictures\c20.webp">Add to cart</a>
+            </div>
+      </div>
+  </div>
+</div>
+</div>
+<hr>
+
+<footer class="footer" style="background-color: aliceblue;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h5>About Us</h5>
+                <p>Finding moments of indulgence and luxury can be a refreshing escape in a world filled with everyday routines and mundane tasks. we has a range of exquisite glassware online 
+                    that elevates the drinking experience to new heights. From stemmed glasses 
+                    like wine glasses and champagne flutes to a diverse range of tumblers in various colours,
+                     designs, and sizes, Nestasia's glassware embodies high quality and provides a perfect canvas for gifting, making every sip a moment to savour.</p>
+            </div>
+            <div class="col-md-4">
+                <h5>Stay in Touch</h5>
+                <p>Sign up for exclusive offers, original products, events, and more</p>
+                <form>
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter your email">
+                    </div>
+                    
+                </form>
+            </div>
+            <div class="col-md-4">
+                <h5>Contact Us</h5>
+                <p>Email: cheshtakharbanda27@gmail.com</p>
+                <p>Phone: +1234567890</p>
+                <div class="social-links">
+                    <a href="mailto:cheshtakharbanda27@gmail.com"><i class="fas fa-envelope"></i></a>
+                    <a href="https://www.linkedin.com/in/cheshta-kharbanda-98118b266/"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <p class="text-muted">Thank you for visiting Glassware</p>
+            </div>
+        </div>
+    </div>
+</footer>
+</div>
+
+<div class="cartItems" class="hidden " style="height: auto;">
+        <span class="close" onclick="closebtn()">&times;</span>
+        <h1>Cart</h1>
+        <br>
+        <div id="total" style="font-size: larger;">Total: Rs.0.00</div> 
+        <div id="shoppingCart" >
+            
+            <div class="card" style=" width: 100px;height: 200px; display: inline;" >
+                <img class="card-img-top" src="..." alt="Card image cap" height="10px" width="10px">
+                <div class="card-body" >
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">card's content.</p>
+                    <div class="quantity" style="width: 50px;">
+                        <input type="number" value="1" min="1">
+                    </div>
+                    <button class="btn btn-danger remove-from-cart" data-id="${item.id}">Remove</button> <!-- Add Remove button -->
+                </div>
+            </div>
+    </div>
+</div>
+<script src="glass.js"></script>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
